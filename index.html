@@ -18,7 +18,7 @@
 <meta property="og:image" content="https://glovvrecruit.github.io/intern/logo_glovv_profile.png"/>
 <meta property="og:image:width" content="1024"/>
 <meta property="og:image:height" content="1024"/>
-<meta property="og:url" content="https://glovvrecruit.github.io/intern/"/>
+<meta property="og:url" content="https://glovvrecruit.github.io/officejob/"/>
 <meta property="og:site_name" content="Glovv"/>
 <meta property="og:locale" content="ko_KR"/>
 
@@ -1038,7 +1038,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- ═══════════════════════════════════════
        중간 CTA 배너 (그라데이션 + 흰 뱃지)
        ═══════════════════════════════════════ -->
-  <a class="gradient-cta-banner" href="https://tally.so/r/RGzKbK" target="_blank" rel="noopener" id="cta-btn-1">
+  <a class="gradient-cta-banner" href="https://tally.so/r/68MNMB" target="_blank" rel="noopener" id="cta-btn-1">
     <p class="gradient-cta-sub">글로브에 궁금한 점, 관심이 생기셨다면</p>
     <p class="gradient-cta-main">30초만에 지원</p>
     <span class="hint-badge">📝 이력서 없이도 가능</span>
@@ -1236,7 +1236,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- ═══════════════════════════════════════
        최하단 CTA 배너 (그라데이션 + 흰 뱃지)
        ═══════════════════════════════════════ -->
-  <a class="gradient-cta-banner" href="https://tally.so/r/RGzKbK" target="_blank" rel="noopener" id="cta-btn-2">
+  <a class="gradient-cta-banner" href="https://tally.so/r/68MNMB" target="_blank" rel="noopener" id="cta-btn-2">
     <p class="gradient-cta-sub">지금 바로 지원하세요</p>
     <p class="gradient-cta-main">30초만에 지원</p>
     <span class="hint-badge">📝 이력서 없이도 가능</span>
@@ -1260,7 +1260,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 <!-- floating CTA -->
-<a class="floating-cta" href="https://tally.so/r/RGzKbK" target="_blank" rel="noopener" id="cta-btn-float">
+<a class="floating-cta" href="https://tally.so/r/68MNMB" target="_blank" rel="noopener" id="cta-btn-float">
   <span class="cta-main-text">[마감 임박] 바로 지원하기 (30초 소요)</span>
   <span class="cta-sub-text">📝 이력서 없이도 지원 가능 · 현재 <span id="applicant-count">90</span>명 지원 중</span>
 </a>
@@ -1426,94 +1426,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 })();
 </script>
 
-<!-- 카카오 SDK -->
-<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.6.0/kakao.min.js"></script>
-<script>
-  if (typeof Kakao !== 'undefined' && !Kakao.isInitialized()) {
-    Kakao.init('0f2f5b34c1ba03e1efb0cad4cb3f2f6a');
-  }
-</script>
-
-<!-- 카카오 저장 버튼 -->
-<style>
-.kakao-save-btn {
-  position: fixed;
-  bottom: 88px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 100;
-  background: #111;
-  color: #fff;
-  border: none;
-  border-radius: 999px;
-  padding: 15px 40px;
-  font-family: 'Pretendard', -apple-system, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  cursor: pointer;
-  white-space: nowrap;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
-  transition: background .15s, transform .15s, box-shadow .15s;
-}
-.kakao-save-btn:hover {
-  background: #333;
-  transform: translateX(-50%) translateY(-3px);
-  box-shadow: 0 10px 32px rgba(0,0,0,0.3);
-}
-@media(max-width:600px){
-  .kakao-save-btn {
-    width: calc(100% - 32px);
-    text-align: center;
-    padding: 15px 20px;
-    bottom: 88px;
-  }
-}
-</style>
-
-<button class="kakao-save-btn" onclick="shareKakao()">
-  🔖 저장하고 다시보기
-</button>
-
-<script>
-function shareKakao() {
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({
-    event: 'cta_click',
-    cta_position: 'kakao_share'
-  });
-
-  if (typeof fbq !== 'undefined') {
-    fbq('trackCustom', 'Save', { cta_position: 'kakao_share' });
-  }
-
-  if (typeof Kakao === 'undefined' || !Kakao.Share) {
-    alert('카카오톡 공유 기능을 불러오는 중입니다. 잠시 후 다시 시도해주세요.');
-    return;
-  }
-
-  Kakao.Share.sendDefault({
-    objectType: 'feed',
-    content: {
-      title: '글로브 뷰티 사무직(계약직) 채용',
-      description: '경력 단절 여성 등 환영! 다시 보고 싶다면 저장해두세요!',
-      imageUrl: 'https://glovvrecruit.github.io/intern/logo_glovv_profile.png',
-      link: {
-        mobileWebUrl: 'https://glovvrecruit.github.io/intern/',
-        webUrl: 'https://glovvrecruit.github.io/intern/',
-      },
-    },
-    buttons: [
-      {
-        title: '공고 확인하기',
-        link: {
-          mobileWebUrl: 'https://glovvrecruit.github.io/intern/',
-          webUrl: 'https://glovvrecruit.github.io/intern/',
-        },
-      },
-    ],
-  });
-}
-</script>
 
 </body>
 </html>
